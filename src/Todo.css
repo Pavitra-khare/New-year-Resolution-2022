@@ -1,0 +1,24 @@
+.task{
+display: flex;
+align-items: center;
+padding: 0 20px;
+}
+
+.delete{
+    width: 34px;
+font-size: 26px;
+height: 33px;
+background-color: red;
+color: white;
+/* transition: background-color 0.5s linear 0.25s; */
+/* transition: color 0.5s linear 0.25s; */
+}
+
+.delete:hover{
+    background-color: rgb(216, 135, 135);
+    color: black;
+    cursor: pointer;
+}
+li{
+    font-family: 'Pacifico', cursive;
+}

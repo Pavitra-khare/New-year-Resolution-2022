@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+*{
+  
+  padding: 0;
+  margin: 0;
+  
+}
+.fullbody{
+ 
+  width:100vh;
+  height:100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainheading{
+  font-size: 100px;
+  font-family: 'Pacifico', cursive;
+  position: absolute;
+  left:83vh;
+  color: aliceblue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card{
+  background-color: rgba(0, 0, 0, 0.13);
+position: absolute;
+top: 15vh;
+left: 30vw;
+width: 35vw;
+height: 80vh;
+border-radius: 15px;
+transition: background-color 0.5s linear 0.10s;
+/* transition: color 0.5s linear 0.25s; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.card:hover{
+  background-color: rgba(0, 0, 0, 0.466);
+}
+
+.heading{
+  font-size: 25px;
+  font-family: 'Pacifico', cursive;
   color: white;
+  text-align: center;
+  margin-top: 10%;
+}
+.addtask{
+  width: 81%;
+height: 34px;
+border-radius: 30px;
+font-size: 20px;
+font-family: revert;
+}
+.enter_task{
+  display: flex;
+justify-content: center;
+width: 100%;
+margin: 30px 0px;
+}
+.addbutton{
+  margin: -3px 7px;
+  font-size: 30px;
+  border-radius: 100%;
+  border-color: #4BB543;
+  width: 45px;
+  background-color: #4BB543;
+  color: white;
+  transition: background-color 0.5s linear 0.25s;
+  /* transition: color 0.5s linear 0.25s; */
+  
 }
 
-.App-link {
-  color: #61dafb;
+.addbutton:hover{
+  background-color: #85df7e;
+  color: black;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul{
+  list-style-type: none;
+}
+
+li{
+  margin: 10px 20px;
+font-size: 27px;
+font-family: revert;
+color: white;
 }
