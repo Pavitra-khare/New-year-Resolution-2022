@@ -14,10 +14,12 @@ Setinputtext(event.target.value);
 }
 
 const Arraysetfunction = ()=>{
+if(InputText.length>0){
 Setarrayoftask((Oldarray)=>{
 return [...Oldarray,InputText];
 });
 Setinputtext("");
+}
 };
 
 const Delete=(index)=>{
@@ -44,8 +46,11 @@ const Delete=(index)=>{
 
   return (
     <>
-    <div className="fullbody">
+    {/* <div className="fullbody"> */}
+    <div className="year">
     <h1 className='mainheading'>2022</h1>
+    </div>
+    <div className="cardalign">
     <div className="card">
     
       <div className="heading">
@@ -69,6 +74,7 @@ const Delete=(index)=>{
       </ul>
     </div>
     </div>
+    {/* </div> */}
     </>
   );
 }

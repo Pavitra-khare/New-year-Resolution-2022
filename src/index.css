@@ -5,7 +5,7 @@
 /* .body{
   background-color:black;
 } */
-.body{
+body{
   background: url(./back.jpeg);
   background-size: cover;
 }

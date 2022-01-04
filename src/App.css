@@ -9,25 +9,37 @@
   width:100vh;
   height:100vh;
 }
+.year{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .mainheading{
   font-size: 100px;
   font-family: 'Pacifico', cursive;
-  position: absolute;
-  left:83vh;
+  /* position: absolute;
+  left:83vh; */
   color: aliceblue;
 }
 
 .card{
   background-color: rgba(0, 0, 0, 0.13);
-position: absolute;
-top: 15vh;
-left: 30vw;
+/* position: absolute;
+top: 17vh;
+left: 30vw; */
 width: 35vw;
-height: 80vh;
+min-height: 80vh;
 border-radius: 15px;
-transition: background-color 0.5s linear 0.10s;
+/* transition: background-color 0.5s linear 0.10s; */
 /* transition: color 0.5s linear 0.25s; */
+overflow-wrap: break-word;
+}
+
+.cardalign{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card:hover{
@@ -82,4 +94,12 @@ li{
 font-size: 27px;
 font-family: revert;
 color: white;
+}
+
+/* responsive design */
+
+@media screen and (max-width:1000px) {
+  .card{
+    width: 90vw;
+  }
 }
